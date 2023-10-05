@@ -4,7 +4,7 @@ from Tienda_app import views
 urlpatterns = [
     
     path('inicio/', views.inicio),
-    path('disco/', views.discos),
+    path('disco/', views.discos, name="Discos"),
     path('discos_comprados/', views.discos_comprados),
     path('disco_vendidos/', views.discos_vendidos),
     path('usuarios/', views.usuarios),
