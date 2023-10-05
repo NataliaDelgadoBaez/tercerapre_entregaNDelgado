@@ -2,16 +2,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def inicio(request):
-    return render(request, "AppCoder/index.html")
+    return render(request, "Tienda_app/index.html")
 
 def discos(request):
-    return HttpResponse("Vista discos")
+    return render(request, "Tienda_app/discos.html")
 
 def discos_comprados(request):
-    return HttpResponse("Vista discos comprados")
+    return render(request, "Tienda_app/discos comprados.html")
 
 def discos_vendidos(request):
-    return HttpResponse("Vista discos vendidos")
+    return render(request, "Tienda_app/discos vendidos.html")
 
 def usuarios(request):
-    return HttpResponse("Vista usuarios")
+    return render(request, "Tienda_app/usuarios.html")
