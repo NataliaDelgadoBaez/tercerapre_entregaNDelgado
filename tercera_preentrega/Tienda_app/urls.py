@@ -5,7 +5,9 @@ urlpatterns = [
     
     path('inicio/', views.inicio),
     path('disco/', views.discos),
-    path('disco/', views.discos_comprados),
-    path('disco/', views.discos_vendidos),
+    path('discos_comprados/', views.discos_comprados),
+    path('disco_vendidos/', views.discos_vendidos),
     path('usuarios/', views.usuarios),
+    path('iniciar_sesion/', views.iniciar_sesion),
+    path('crar_cuenta/', views.crear_cuenta),
 ]

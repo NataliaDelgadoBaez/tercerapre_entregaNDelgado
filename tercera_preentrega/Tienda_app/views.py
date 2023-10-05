@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 def inicio(request):
     return render(request, "Tienda_app/index.html")
@@ -15,3 +15,9 @@ def discos_vendidos(request):
 
 def usuarios(request):
     return render(request, "Tienda_app/usuarios.html")
+
+def iniciar_sesion(request):
+    return render(request, "Tienda_app/iniciar sesion.html")
+
+def crear_cuenta(request):
+    return render(request, "Tienda_app/crear cuenta.html")
