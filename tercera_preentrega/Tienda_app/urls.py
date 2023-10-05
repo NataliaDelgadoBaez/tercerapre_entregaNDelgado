@@ -10,4 +10,5 @@ urlpatterns = [
     path('usuarios/', views.usuarios),
     path('iniciar_sesion/', views.iniciar_sesion),
     path('crar_cuenta/', views.crear_cuenta),
+    path('formulario/', views.formulario, name="Formulario"),
 ]

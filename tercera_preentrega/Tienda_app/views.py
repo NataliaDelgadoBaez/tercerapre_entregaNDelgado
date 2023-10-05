@@ -21,3 +21,6 @@ def iniciar_sesion(request):
 
 def crear_cuenta(request):
     return render(request, "Tienda_app/crear cuenta.html")
+
+def formulario(request):
+    return render(request, "Tienda_app/formulario.html")
