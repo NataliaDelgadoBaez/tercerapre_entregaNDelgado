@@ -9,6 +9,6 @@ urlpatterns = [
     path('disco_vendidos/', views.discos_vendidos),
     path('usuarios/', views.usuarios),
     path('iniciar_sesion/', views.iniciar_sesion),
-    path('crar_cuenta/', views.crear_cuenta),
-    path('formulario/', views.formulario, name="Formulario"),
+    path('crear_cuenta/', views.crear_cuenta),
+    path('Discoform/', views.disco_formulario, name="Discoformulario"),
 ]

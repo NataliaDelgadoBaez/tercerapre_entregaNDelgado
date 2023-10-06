@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from Tienda_app.models import Disco
 
 def inicio(request):
     return render(request, "Tienda_app/index.html")
@@ -22,5 +22,13 @@ def iniciar_sesion(request):
 def crear_cuenta(request):
     return render(request, "Tienda_app/crear cuenta.html")
 
-def formulario(request):
-    return render(request, "Tienda_app/formulario.html")
+def disco_formulario(request):
+      if request.method == 'POST':
+      
+            disco =  Disco(request.post['disco'],(request.post['artista']))
+ 
+            disco.save()
+ 
+            return render(request, "Tienda_app/index.html")
+ 
+      return render(request,"Tienda_app/Discoformulario.html")
