@@ -3,7 +3,7 @@ from django.db import models
 
 class Disco(models.Model):
     nombre = models.CharField(max_length=40)
-    autor = models.IntegerField()
+    autor = models.CharField(max_length=40)
     año = models.IntegerField()
 
     #def __str__(self):

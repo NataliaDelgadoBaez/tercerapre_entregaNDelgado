@@ -1,0 +1,16 @@
+{% extends 'Tienda_app/base.html' %}
+{% load static %}
+
+{% block title %} formulario {% endblock title %}
+
+{% block main %}
+
+{% for disco in discos %}
+
+<p>nombre: {{ disco.nombre }}</p>
+<p>autor: {{ disco.autor }}</p>
+
+{% endfor %}
+
+
+{% endblock main %}

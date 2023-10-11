@@ -10,5 +10,7 @@ urlpatterns = [
     path('usuarios/', views.usuarios),
     path('iniciar_sesion/', views.iniciar_sesion),
     path('crear_cuenta/', views.crear_cuenta),
-    path('Discoform/', views.disco_formulario, name="Discoformulario"),
+    path('Discform/', views.Discoforms, name="Discoforms"),
+    path('Buscar/', views.Buscardisco, name="Buscardisco"),
+    
 ]
